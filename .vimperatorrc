@@ -1,0 +1,60 @@
+set! ui.key.contentAccess=0
+set! refcontrol.actions=@DEFAULT=@NORMAL\ ameba.jp=\ dtiblog.com=@FORGE\ fc2.com=\ image.itmedia.co.jp=@FORGE\ img.itmedia.co.jp=@FORGE\ minkch.com=@NORMAL\ momi7.momi3.net=@FORGE\ pixiv.net=@3RDPARTY:@FORGE\ www.b-idol.com=@FORGE\ xyzzz.blog.shinobi.jp=@FORGE
+
+set hintchars=hjklasdf
+set hlsearch
+set focuscontent
+set ignorecase
+
+set visualbell
+hi Bell display: none;
+
+let g:smooziee_scroll_amount="600"
+let g:smooziee_scroll_interval="10"
+nnoremap J 4j
+nnoremap K 4k
+"nnoremap j <C-d>
+"nnoremap k <C-u>
+
+nnoremap zi zI
+nnoremap zo zO
+
+map h <A-Left>
+map l <A-Right>
+noremap H :tabprevious<CR>
+noremap L :tabnext<CR>
+
+cnoremap <Up> <S-Tab>
+cnoremap <Down> <Tab>
+
+command U :set encoding=UTF-8
+command E :set encoding=EUC-JP
+command S :set encoding=Shift_JIS
+
+highlight Hint z-index:99999;color:#fff;font-size:12px;font-weight:bold;line-height:20px;background:#000;border-radius:10px;padding:0;display:block;min-width:20px;text-align:center;position:absolute;margin-left:-5px;text-transform:uppercase;
+highlight HintElem background:#f99;color:#000;
+highlight HintActive background:#f99;color:#000;
+
+set hinttimeout=350
+set popups=tab,resized
+
+map a <NOP>
+map q <NOP>
+map q 1b
+
+javascript <<EOM
+liberator.modules.commands.addUserCommand(["togglepin"], "add pin to current tab",
+function(){
+    var currentTab = gBrowser.mCurrentTab
+    if(currentTab.pinned){
+        gBrowser.unpinTab(currentTab)
+    }
+    else{
+        gBrowser.pinTab(currentTab)
+    }
+});
+EOM
+
+map m <NOP>
+nnoremap m :togglepin <CR>
+
