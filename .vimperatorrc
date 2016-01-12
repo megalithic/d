@@ -9,7 +9,7 @@ set ignorecase
 set visualbell
 hi Bell display: none;
 
-let g:smooziee_scroll_amount="600"
+let g:smooziee_scroll_amount="400"
 let g:smooziee_scroll_interval="10"
 nnoremap J 4j
 nnoremap K 4k
