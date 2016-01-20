@@ -176,7 +176,7 @@ zstyle ':auto-fu:highlight' input bold
 zstyle ':auto-fu:var' postdisplay $''
 zstyle ':auto-fu:var' disable magic-space
 zstyle ':auto-fu:var' autoable-function/skiplbuffers \
-  'yaourt *' 'pacman *' 'sudo pacman *' 'g * *' 'j *' 'd * *' 'dc * *' 'npm *' 'java *' 'journalctl *' 'scp *' 'rsync *' 'rustc *' './gradlew *' './bin/rails *' './bin/rake *'
+  'yaourt *' 'pacman *' 'sudo pacman *' 'g * *' 'stack * *' 'j *' 'd * *' 'dc * *' 'npm *' 'java *' 'journalctl *' 'scp *' 'rsync *' 'rustc *' './gradlew *' './bin/rails *' './bin/rake *'
 
 source ~/.config/zsh/vcs-info.zsh
 source ~/.local.zsh
