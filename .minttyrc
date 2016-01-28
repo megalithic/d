@@ -1,7 +1,7 @@
 BoldAsFont=no
 ForegroundColour=255,255,255
 BackgroundColour=17,17,17
-Transparency=low
+Transparency=off
 CursorType=block
 Font=Ricty
 FontHeight=14

@@ -17,25 +17,12 @@ case $1 in
       rm -f "$HOME/$i"
       ln -s "$cwd/$i" "$HOME/$i"
     done
-
-    case "${OSTYPE}" in
-    msys*)
-      rm -f "$HOME/vimperator"
-      ln -s "$HOME/.vimperator" "$HOME/vimperator";;
-    esac
-
     echo 'done.';;
 
   "unlink")
     cat $dotfiles | while read i; do
       rm -f "$HOME/$i"
     done
-
-    case "${OSTYPE}" in
-    msys*)
-      rm -f "$HOME/vimperator";;
-    esac
-
     echo 'done.';;
 
   *)

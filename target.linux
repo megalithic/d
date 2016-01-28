@@ -3,7 +3,6 @@
 .config/zsh
 .config/peco
 .vimperatorrc
-.vimperator/plugin
 .vimrc
 .vim/bundle/neobundle.vim
 .gitconfig
