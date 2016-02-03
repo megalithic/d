@@ -53,6 +53,7 @@ NeoBundle 'w0ng/vim-hybrid'
 
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'gregsexton/gitv'
+NeoBundle 'jreybert/vimagit'
 
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'kchmck/vim-coffee-script'
