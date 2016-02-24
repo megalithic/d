@@ -7,8 +7,8 @@ set focuscontent
 set ignorecase
 set smartcase
 
-beep off
-set noerrorbells
+set visualbell
+highlight Bell display:none
 
 nnoremap j <Down><Down><Down><Down><Down><Down>
 nnoremap k <Up><Up><Up><Up><Up><Up><Up>
