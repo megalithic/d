@@ -280,5 +280,8 @@ function focusedWin(f, orFocus)
 end
 
 init()
+do
+  local _ = hs.application -- Hammerspoon #799
+end
 hs.alert.show("init.lua loaded")
 
